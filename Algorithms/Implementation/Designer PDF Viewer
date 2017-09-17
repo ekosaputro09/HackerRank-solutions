@@ -1,0 +1,23 @@
+#!/bin/python3
+
+import sys
+
+def get_max_height(word, height_arr) :
+    height = 0
+    for c in word :
+        height = max(height, height_arr[ord(c) - ord("a")])
+
+    return height
+
+def get_area(word, height):
+    width = 1
+    area = len(word) * width * height
+    
+    return area
+
+h = list(map(int, input().strip().split(' ')))
+word = input().strip()
+
+highest = get_max_height(word, h)
+area = get_area(word, highest)
+print(area)
