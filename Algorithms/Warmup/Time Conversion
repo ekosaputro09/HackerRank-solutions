@@ -1,0 +1,27 @@
+#!/bin/python3
+
+import sys
+
+def timeConversion(s):
+    # Complete this function
+    hh = s[0:2]
+    period = s[-2:]
+
+    if period == "AM" :
+        if hh == "12" :
+            time_conv = "00" + s[2:-2]
+        else :
+            time_conv = s[0:-2]
+    elif period == "PM" :
+        if hh == "12" :
+            time_conv = s[0:-2]
+        else :
+            time_conv = str(int(hh) + 12) + s[2:-2]
+    else :
+        assert false
+
+    return time_conv
+
+s = input().strip()
+result = timeConversion(s)
+print(result)
