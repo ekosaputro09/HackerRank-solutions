@@ -4,8 +4,7 @@ import sys
 
 def birthdayCakeCandles(n, ar):
     # Complete this function
-    tallest = max(ar)
-    candle_blows = ar.count(tallest)
+    candle_blows = ar.count(max(ar))
     
     return candle_blows
 
