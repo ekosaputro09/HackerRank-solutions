@@ -1,6 +1,11 @@
-a = int(input())
-b = int(input())
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+    
+sums = a + b
+difference = a - b
+product = a * b
 
-print(a + b)
-print(a - b)
-print(a * b)
+print(sums)
+print(difference)
+print(product)
