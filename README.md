@@ -1,2 +1,2 @@
-# hackerrank-challenges
-documentation of hackerrank challenges
+# hackerrank-solutions
+documentation of hackerrank challenge solutions
